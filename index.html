@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='Script\jquery-3.3.1.min.js'></script>
     <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <link href='Css/style.css' rel='stylesheet' type='text/css'>
-    <script src='Script\jquery-3.3.1.min.js'></script>
     <script src='Script\bootstrap.min.js'></script>
     <title>Kai Sotto</title>
 </head>
@@ -19,8 +19,8 @@
         </video>
         <div class="content">
             <div class="container w-100 h-100">
-                <nav class='navbar navbar-expand-md nav-dark'>
-                    <button class='navbar-toggler' data='#collapse' type='button'>
+                <nav class='navbar navbar-expand-md sticky-top navbar-dark'>
+                    <button class='navbar-toggler' data-toggle="collapse" data-target="#collapse">
                         <span class='navbar-toggler-icon'></span>
                     </button>
                     <nav class='navbar-brand' href='#'></nav>
@@ -37,7 +37,7 @@
                                     <a class='nav-link btnshop'>SHOP</a>
                                 </li>
                                 <li>
-                                    <a class='nav-link btnlogin'>LOGIN</a>
+                                    <a class='nav-link btnlogin' href="login.html">LOGIN</a>
                                 </li>
                                 <li>
                                     <a class='nav-link btncontact'>CONTACT US</a>
@@ -58,7 +58,7 @@
                             <img class='img-fluid mx-auto d-block imgdown' src='Image/down-arrow.png'>
                         </a>
                     </div>
-                </div>
+                </div> 
             </div>
         </div>
     </div>
@@ -86,6 +86,14 @@
                         <img class='img-fluid imgfacebook' src='Image/facebook.png'>
                         <img class='img-fluid imgyoutube' src='Image/youtube.png'>
                         <img class='img-fluid imgfacebook' src='Image/instagram.png'>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class='form-inline d-flex txt-social'>
+                        <a href="#" class = "lblhome ml-auto"><label style= "cursor:pointer">Home</label></a>
+                        <a href="#" class = "lblgallery"><label style= "cursor:pointer">Gallery</label></a>
+                        <a href="#" class = "lblshop"><label style= "cursor:pointer">Shop</label></a>
+                        <a href="#" class = "lblcontact"><label style= "cursor:pointer">Contact</label></a>
                     </div>
                 </div>
             </div>
