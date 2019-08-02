@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href='Css/videojs-resolution-switcher.css' rel='stylesheet'>
+    <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/video.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+    
+    <title>Kai Sotto</title>
+</head>
+<body>
+    <div id="hero">
+        <video loop muted autoplay poster="">
+            <source src="Image/video.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <div class="container w-100 h-100">
+                <nav class='navbar navbar-expand-md sticky-top navbar-dark'>
+                    <button class='navbar-toggler' data-toggle="collapse" data-target="#collapse">
+                        <span class='navbar-toggler-icon'></span>
+                    </button>
+                    <nav class='navbar-brand' href='#'></nav>
+                    <div class='collapse navbar-collapse' id='collapse'>
+                        <div class='col2 mx-auto'>
+                            <ul class='nav navbar-nav'>
+                                <li>
+                                    <a class='nav-link btnhome' href = "index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a class='nav-link btngallery'>GALLERY</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link btnlogo"><img src="Image/logo.png" class="img-fluid img-logo-header"></a>
+                                </li>
+                                <li>
+                                    <a class='nav-link btnshop'>SHOP</a>
+                                </li>
+                                <li>
+                                    <a class='nav-link btnlogin' href="login.html">LOGIN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-7" style="margin-top:-10%;">
+                        <p class="pcheck">Kai Sotto</p>
+                        <p class="pcheck1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <input type="text" class="txt1" placeholder="Search video here.">
+                        <input type="button" class="btnsearch" value="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-6">
+                    <video id="video" class="video-js vjs-default-skin vjs-16-9 vjs-big-play-centered"  controls data-setup='{}'>
+                        <source src="Image/video.mp4" type='video/mp4' res=720p  label='720p' />
+                        <source src="Image/480.mp4" type='video/mp4' res=480p  label='480' />
+                        <source src="Image/360.mp4" type='video/mp4' res=360p  label='360' />
+                    </video>
+            </div>
+            <div class="col-lg-6">
+                <p class="pkai">Amazing Kai Sotto is on fire!!</p>
+                <p class="pkai2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p style="font-family:Muli;font-size:15px;color:white;">Points: 17</p>
+                <p style="font-family:Muli;font-size:15px;color:white;">Rebounds: 8</p>
+                <p style="font-family:Muli;font-size:15px;color:white;">Blocks: 6</p>
+                <p style="font-family:Muli;font-size:15px;color:white;">Current NBA Status: Draft Eligible in 2024</p>
+                <input type = "button" value = "Watch video" class = "btnwatch">
+                <input type = "button" value = "Read more" class = "btnread">
+            </div>
+        </div>
+        <div class="container w-100">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video1" style="margin-top: 40px;">
+                        <label
+                            style="color: white;font-family: Muli;font-size:20px;font-weight: bold;">Recommended</label>
+                        <label style="color: white;font-family: Muli light;font-size:15px;cursor:pointer;"
+                            class="float-right">Show more | View trending</label>
+                        <div class="row" style="margin-top:20px;">
+                            <div class="col-lg-3">
+                                <div class="embed-responsive embed-responsive-16by9" data-toggle="modal" data-rel="1"
+                                    data-target="#exampleModalCenter" style="cursor: pointer;">
+                                    <video width="100%" height="240" poster="Image/kai.jpg">
+                                        <source src="Image/video.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" id="1">
+                                        <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                    </div>
+                                </div>
+                                <p
+                                    style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                    #FIBAU19 U19 Word Cup </p>
+                                <p
+                                    style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="embed-responsive embed-responsive-16by9" data-rel="2"
+                                    style="cursor: pointer;">
+                                    <video width="100%" height="240" poster="Image/pic3.jpg">
+                                        <source src="Image/video.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" id="2">
+                                        <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                    </div>
+                                </div>
+                                <p
+                                    style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                    #FIBAU19 U19 Word Cup </p>
+                                <p
+                                    style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="embed-responsive embed-responsive-16by9" data-rel="3"
+                                    style="cursor: pointer;">
+                                    <video width="100%" height="240" poster="Image/pic4.jpg">
+                                        <source src="Image/video.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" id="3">
+                                        <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                    </div>
+                                </div>
+                                <p
+                                    style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                    #FIBAU19 U19 Word Cup </p>
+                                <p
+                                    style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="embed-responsive embed-responsive-16by9" data-rel="4"
+                                    style="cursor: pointer;">
+                                    <video width="100%" height="240" poster="Image/pic1.jpg">
+                                        <source src="Image/video.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" id="4">
+                                        <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                    </div>
+                                </div>
+                                <p
+                                    style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                    #FIBAU19 U19 Word Cup </p>
+                                <p
+                                    style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="video1" style="margin-top: 20px;">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <div class="embed-responsive embed-responsive-16by9" data-rel="5"
+                                    style="cursor: pointer;">
+                                    <video width="100%" height="240" poster="Image/pic2.jpg">
+                                        <source src="Image/video.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" id="5">
+                                        <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                    </div>
+                                </div>
+                                <p
+                                    style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                    #FIBAU19 U19 Word Cup </p>
+                                <p
+                                    style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="embed-responsive embed-responsive-16by9" data-rel="6"
+                                    style="cursor: pointer;">
+                                    <video width="100%" height="240" poster="Image/pic3.jpg">
+                                        <source src="Image/video.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" id="6">
+                                        <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                    </div>
+                                </div>
+                                <p
+                                    style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                    #FIBAU19 U19 Word Cup </p>
+                                <p
+                                    style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="embed-responsive embed-responsive-16by9" data-rel="7"
+                                    style="cursor: pointer;">
+                                    <video width="100%" height="240" poster="Image/pic4.jpg">
+                                        <source src="Image/video.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" id="7">
+                                        <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                    </div>
+                                </div>
+                                <p
+                                    style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                    #FIBAU19 U19 Word Cup </p>
+                                <p
+                                    style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="embed-responsive embed-responsive-16by9" data-rel="8"
+                                    style="cursor: pointer;">
+                                    <video width="100%" height="240" poster="Image/pic1.jpg">
+                                        <source src="Image/video.mp4" type="video/mp4">
+                                    </video>
+                                    <div class="play-button" id="8">
+                                        <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                    </div>
+                                </div>
+                                <p
+                                    style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                    #FIBAU19 U19 Word Cup </p>
+                                <p
+                                    style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer">
+                <div class="row" style="margin-top: 40px;">
+                    <div class="col-lg-12 d-flex flex-column">
+                        <div class="form-inline mx-auto">
+                            <p style="font-family: Muli; font-size:16px;color:white;margin-right: 15px;cursor:pointer;">
+                                Home
+                            </p>
+                            <p style="font-family: Muli; font-size:16px;color:white;margin-right: 40px;cursor:pointer;">
+                                Gallery</p>
+                            <img src="Image/logo.png" class="img-fluid img-logo-footer"
+                                style="width: 100px;margin-right: 40px;cursor:pointer;">
+                            <p style="font-family: Muli; font-size:16px;color:white;margin-right: 15px;cursor:pointer;">
+                                Shop
+                            </p>
+                            <p style="font-family: Muli; font-size:16px;color:white;margin-right: 15px;cursor:pointer;">
+                                Login</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="margin-top:35px;margin-bottom:35px;">
+                    <div class="col-lg-12 d-flex flex-column">
+                        <div class="form-inline mx-auto">
+                            <img src="Image/facebook.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                            <img src="Image/instagram.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                            <img src="Image/youtube.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                            <img src="Image/twitter.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                        </div>
+                    </div>
+                </div>
+                <p style="font-family: Muli; font-size:16px;color:white;" class="text-center">2019 @ Kai Sotto. All
+                    Rights Reserved</p>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" style="margin:2px; padding:2px;">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <video width="100%" height="240" controls poster="Image/pic2.jpg">
+                                <source src="Image/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function () {
+                $('.embed-responsive').hover(function () {
+                    $('#' + $(this).data('rel')).css("visibility", "visible");
+                }, function () {
+                    $('#' + $(this).data('rel')).css("visibility", "hidden");
+                });
+            });
+        </script>
+<script src='Script\video.js'></script>
+<script src='Script\videojs-resolution-switcher.js'></script>
+<script type="text/javascript">
+    videojs('video').videoJsResolutionSwitcher({
+        default: 320 });
+</script>
+</html>

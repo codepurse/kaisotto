@@ -1,0 +1,17 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1300px !important;
+    }
+}
+
+body, html {
+    background-color: #eeeeee;
+    width: 100%;
+    height: auto;
+}
+
+.ptitle {
+    font-family: Muli;
+    font-size:17px;
+    font-weight: bold;
+}

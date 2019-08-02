@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+    <script src="https://cdn.plyr.io/3.5.6/plyr.polyfilled.js"></script>
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='Css/video.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+
+    <title>Kai Sotto</title>
+</head>
+
+<body>
+
+    <!-- Container 1 (Navbar, video background, text and buttonss) -->
+    <div id="hero">
+        <video loop muted autoplay poster="">
+            <source src="Image/video.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <div class="container w-100 h-100">
+                <nav class='navbar navbar-expand-md sticky-top navbar-dark'>
+                    <button class='navbar-toggler' data-toggle="collapse" data-target="#collapse">
+                        <span class='navbar-toggler-icon'></span>
+                    </button>
+                    <nav class='navbar-brand' href='#'></nav>
+                    <div class='collapse navbar-collapse' id='collapse'>
+                        <div class='col2 mx-auto'>
+                            <ul class='nav navbar-nav'>
+                                <li>
+                                    <a class='nav-link btnhome' href="index.html">HOME</a>
+                                </li>
+                                <li>
+                                    <a class='nav-link btngallery'>GALLERY</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link btnlogo"><img src="Image/logo.png"
+                                            class="img-fluid img-logo-header"></a>
+                                </li>
+                                <li>
+                                    <a class='nav-link btnshop'>SHOP</a>
+                                </li>
+                                <li>
+                                    <a class='nav-link btnlogin' href="login.html">LOGIN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row align-items-center h-100">
+                    <div class="col-lg-7" style="margin-top:-10%;">
+                        <p class="pcheck">Kai Sotto</p>
+                        <p class="pcheck1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <div class="form-inline">
+                            <input type="text" class="txt1" placeholder="Search video here.">
+                            <input type="button" class="btnsearch" value="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container 2 Kai sotto say thanks for his fan-->
+    <div class="container">
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-lg-6">
+                <div class="player" id="player" data-plyr-provider="youtube" data-plyr-embed-id="fPgm2ZRhlXo"></div>
+            </div>
+            <div class="col-lg-6">
+                <p class="pkai"></p>
+                <div class="form-inline">
+                    <p class="pkai2" id="pviews"></p>
+                    <div class="form-inline ml-auto" style="margin-top:-20px;">
+                        <img src="Image/Icons/like.png" class="img-fluid" style="width: 20px;padding-right: 5px;">
+                        <p class="plike" style="margin-right:20px"></p>
+                        <img src="Image/Icons/dislike.png" class="img-fluid" style="width: 20px;padding-right: 5px;">
+                        <p class="pdislike"></p>
+                    </div>
+                </div>
+                <div class="form-inline">
+                    <img src="Image/Pictures/youtubeprof.jpg" class="img-fluid imgprofyoutube">
+                    <p class="pchannelname">Kai Sotto<br><span class="pjoineddate">Joined Apr 30, 2019</span></p>
+                    <div class="ml-auto" style="margin-top:10px;">
+                        <input type="button" value="Subscribe" class="btnsubscribe">
+                    </div>
+                </div>
+                <p class="pdescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- All videos of kai sotto -->
+    <div class="container w-100">
+
+        <!-- First 4 videos of Kai sotto-->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="video1" style="margin-top: 40px;">
+                    <label style="color: white;font-family: Muli;font-size:20px;font-weight: bold;">Recommended</label>
+                    <!--
+                    <label style="color: white;font-family: Muli light;font-size:15px;cursor:pointer;"
+                        class="float-right">Show more | View trending</label>
+                    -->
+                    <div class="row" style="margin-top:20px;">
+                        <div class="col-lg-3">
+                            <div class="embed-responsive embed-responsive-16by9" data-toggle="modal" data-rel="1"
+                                data-target="#modal1" style="cursor: pointer;">
+                                <video width="100%" height="240" poster="Image/Videos/thumbnail/thumbnail1.jpg">
+                                    <source src="Image/video.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-button" id="1">
+                                    <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                </div>
+                            </div>
+                            <p class="video1title"
+                                style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                #FIBAU19 U19 Word Cup </p>
+                            <p class="video1views"
+                                style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="embed-responsive embed-responsive-16by9" data-toggle="modal" data-rel="1"
+                                data-target="#modal2" style="cursor: pointer;">
+                                <video width="100%" height="240" poster="Image/Videos/thumbnail/thumbnail2.jpg">
+                                    <source src="Image/video.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-button" id="1">
+                                    <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                </div>
+                            </div>
+                            <p class="video2title"
+                                style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                #FIBAU19 U19 Word Cup </p>
+                            <p class="video2views"
+                                style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="embed-responsive embed-responsive-16by9" data-toggle="modal" data-rel="1"
+                                data-target="#modal3" style="cursor: pointer;">
+                                <video width="100%" height="240" poster="Image/Videos/thumbnail/thumbnail3.jpg">
+                                    <source src="Image/video.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-button" id="1">
+                                    <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                </div>
+                            </div>
+                            <p class="video3title"
+                                style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                #FIBAU19 U19 Word Cup </p>
+                            <p class="video3views"
+                                style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="embed-responsive embed-responsive-16by9" data-toggle="modal" data-rel="1"
+                                data-target="#modal4" style="cursor: pointer;">
+                                <video width="100%" height="240" poster="Image/Videos/thumbnail/thumbnail4.jpg">
+                                    <source src="Image/video.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-button" id="1">
+                                    <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                </div>
+                            </div>
+                            <p class="video4title"
+                                style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                #FIBAU19 U19 Word Cup </p>
+                            <p class="video4views"
+                                style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 more videos of kai -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="video1" style="margin-top: 20px;">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="embed-responsive embed-responsive-16by9" data-toggle="modal" data-rel="1"
+                                data-target="#modal5" style="cursor: pointer;">
+                                <video width="100%" height="240" poster="Image/Videos/thumbnail/thumbnail5.jpg">
+                                    <source src="Image/video.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-button" id="1">
+                                    <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                </div>
+                            </div>
+                            <p class="video5title"
+                                style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                #FIBAU19 U19 Word Cup </p>
+                            <p class="video5views"
+                                style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="embed-responsive embed-responsive-16by9" data-toggle="modal" data-rel="1"
+                                data-target="#modal6" style="cursor: pointer;">
+                                <video width="100%" height="240" poster="Image/Videos/thumbnail/thumbnail6.jpg">
+                                    <source src="Image/video.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-button" id="1">
+                                    <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                </div>
+                            </div>
+                            <p class="video6title"
+                                style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                #FIBAU19 U19 Word Cup </p>
+                            <p class="video6views"
+                                style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="embed-responsive embed-responsive-16by9" data-toggle="modal" data-rel="1"
+                                data-target="#modal7" style="cursor: pointer;">
+                                <video width="100%" height="240" poster="Image/Videos/thumbnail/thumbnail7.jpg">
+                                    <source src="Image/video.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-button" id="1">
+                                    <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                </div>
+                            </div>
+                            <p class="video7title"
+                                style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                #FIBAU19 U19 Word Cup </p>
+                            <p class="video7views"
+                                style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="embed-responsive embed-responsive-16by9" data-toggle="modal" data-rel="1"
+                                data-target="#modal8" style="cursor: pointer;">
+                                <video width="100%" height="240" poster="Image/Videos/thumbnail/thumbnail8.jpg">
+                                    <source src="Image/video.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-button" id="1">
+                                    <img src="Image/play.png" class="img-fluid" style="width:50px;">
+                                </div>
+                            </div>
+                            <p class="video8title"
+                                style="font-family: Muli;color:white;font-size:14px;font-weight: normal;margin-top:11px;">
+                                #FIBAU19 U19 Word Cup </p>
+                            <p class="video8views"
+                                style="font-family: Muli Light;color:#ededed;font-size:13px;line-height: 1.6;margin-top:-5px;">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer of the website -->
+    <div class="container">
+        <div class="footer">
+            <div class="row" style="margin-top: 40px;">
+                <div class="col-lg-12 d-flex flex-column">
+                    <div class="form-inline mx-auto">
+                        <p style="font-family: Muli; font-size:16px;color:white;margin-right: 15px;cursor:pointer;">
+                            Home
+                        </p>
+                        <p style="font-family: Muli; font-size:16px;color:white;margin-right: 40px;cursor:pointer;">
+                            Gallery</p>
+                        <img src="Image/logo.png" class="img-fluid img-logo-footer"
+                            style="width: 100px;margin-right: 40px;cursor:pointer;">
+                        <p style="font-family: Muli; font-size:16px;color:white;margin-right: 15px;cursor:pointer;">
+                            Shop
+                        </p>
+                        <p style="font-family: Muli; font-size:16px;color:white;margin-right: 15px;cursor:pointer;">
+                            Login</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:35px;margin-bottom:35px;">
+                <div class="col-lg-12 d-flex flex-column">
+                    <div class="form-inline mx-auto">
+                        <img src="Image/facebook.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                        <img src="Image/instagram.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                        <img src="Image/youtube.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                        <img src="Image/twitter.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                    </div>
+                </div>
+            </div>
+            <p style="font-family: Muli; font-size:16px;color:white;" class="text-center">2019 @ Kai Sotto. All
+                Rights Reserved</p>
+        </div>
+    </div>
+
+    <!-- All Modal of videos -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="margin:2px; padding:2px;">
+                    <div class="player" id="player" data-plyr-provider="youtube" data-plyr-embed-id="4oo-7WIb_Po">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="margin:2px; padding:2px;">
+                    <div class="player" id="player" data-plyr-provider="youtube" data-plyr-embed-id="lhWBxLMfSwI">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="margin:2px; padding:2px;">
+                    <div class="player" id="player" data-plyr-provider="youtube" data-plyr-embed-id="K9_zyQWTrO4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="margin:2px; padding:2px;">
+                    <div class="player" id="player" data-plyr-provider="youtube" data-plyr-embed-id="qGyyo_fuP4o">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="margin:2px; padding:2px;">
+                    <div class="player" id="player" data-plyr-provider="youtube" data-plyr-embed-id="hhbA4-nJ8fg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="margin:2px; padding:2px;">
+                    <div class="player" id="player" data-plyr-provider="youtube" data-plyr-embed-id="wyVx8ZYQO9M">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="margin:2px; padding:2px;">
+                    <div class="player" id="player" data-plyr-provider="youtube" data-plyr-embed-id="PD_QkJFGl6E">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body" style="margin:2px; padding:2px;">
+                    <div class="player" id="player" data-plyr-provider="youtube" data-plyr-embed-id="mJyoHFKc6c0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        //Hover effects for play button
+        $(document).ready(function () {
+            $('.embed-responsive').hover(function () {
+                $('#' + $(this).data('rel')).css("visibility", "visible");
+            }, function () {
+                $('#' + $(this).data('rel')).css("visibility", "hidden");
+            });
+        });
+
+
+        // Array for multiple players at the same time
+        const players = Array.from(document.querySelectorAll('.player'));
+
+        players.map(player => new Plyr(player, {
+
+            debug: true,
+            autoplay: false,
+            ratio: '16:9'
+        }));
+
+        players.forEach(function (player) {
+
+            window.addEventListener("load", function () {
+
+                //player.pause();
+                setTimeout(() => { player.pause() }, 10);
+
+            })
+        });
+
+        //LOAD ALL VIDEO WHEN THE DOCUMENTS IS READY
+        $(document).ready(function () {
+
+            //LOAD ALL Video title USING YOUTUBE API and GETJSON
+            var urlSubscriptionCount = 'https://www.googleapis.com/youtube/v3/channels?part=statistics&id=UCECCjpCdOirFWq_5w_bJ70A&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideoTitle = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=fPgm2ZRhlXo&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo1Title = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=4oo-7WIb_Po&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo2Title = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=lhWBxLMfSwI&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo3Title = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=K9_zyQWTrO4&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo4Title = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=qGyyo_fuP4o&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo5Title = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=hhbA4-nJ8fg&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo6Title = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=wyVx8ZYQO9M&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo7Title = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=PD_QkJFGl6E&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo8Title = 'https://www.googleapis.com/youtube/v3/videos?part=snippet&id=mJyoHFKc6c0&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+
+            //LOAD ALL VIDEO VIEWS USING YOUTUBE API AND GETJSON
+            var urlVideoViews = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=fPgm2ZRhlXo&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo1Views = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=4oo-7WIb_Po&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo2Views = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=lhWBxLMfSwI&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo3Views = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=K9_zyQWTrO4&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo4Views = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=qGyyo_fuP4o&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo5Views = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=hhbA4-nJ8fg&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo6Views = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=wyVx8ZYQO9M&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo7Views = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=PD_QkJFGl6E&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+            var urlVideo8Views = 'https://www.googleapis.com/youtube/v3/videos?part=statistics&id=mJyoHFKc6c0&key=AIzaSyDFB3v48m3Xgh-kVOkIh8VBT7yPDYbCBok';
+
+
+            //YOUTUBE API USING SNIPPET 
+            $.getJSON(urlSubscriptionCount)
+                .done(function (data) {
+                    $(".btnsubscribe").prop('value', 'Subscribers: ' + data.items[0].statistics.subscriberCount);
+                })
+            $.getJSON(urlVideoTitle)
+                .done(function (data) {
+                    $(".pkai").text(data.items[0].snippet.title);
+                })
+            $.getJSON(urlVideo1Title)
+                .done(function (data) {
+                    $(".video1title").text(data.items[0].snippet.title);
+                })
+            $.getJSON(urlVideo2Title)
+                .done(function (data) {
+                    $(".video2title").text(data.items[0].snippet.title);
+                })
+            $.getJSON(urlVideo3Title)
+                .done(function (data) {
+                    $(".video3title").text(data.items[0].snippet.title);
+                })
+            $.getJSON(urlVideo4Title)
+                .done(function (data) {
+                    $(".video4title").text(data.items[0].snippet.title);
+                })
+            $.getJSON(urlVideo5Title)
+                .done(function (data) {
+                    $(".video5title").text(data.items[0].snippet.title);
+                })
+            $.getJSON(urlVideo6Title)
+                .done(function (data) {
+                    $(".video6title").text(data.items[0].snippet.title);
+                })
+            $.getJSON(urlVideo7Title)
+                .done(function (data) {
+                    $(".video7title").text(data.items[0].snippet.title);
+                })
+            $.getJSON(urlVideo8Title)
+                .done(function (data) {
+                    $(".video8title").text(data.items[0].snippet.title);
+                })
+
+
+
+            //YOUTUBE API USING STATISTICS
+            $.getJSON(urlVideoViews)
+                .done(function (data) {
+                    $(".pkai2").text('Views: ' + data.items[0].statistics.viewCount);
+                    $(".plike").text(data.items[0].statistics.likeCount);
+                    $(".pdislike").text(data.items[0].statistics.dislikeCount);
+                })
+            $.getJSON(urlVideo1Views)
+                .done(function (data) {
+                    $(".video1views").text(data.items[0].statistics.viewCount + " views");
+                })
+            $.getJSON(urlVideo2Views)
+                .done(function (data) {
+                    $(".video2views").text(data.items[0].statistics.viewCount + " views");
+                })
+            $.getJSON(urlVideo3Views)
+                .done(function (data) {
+                    $(".video3views").text(data.items[0].statistics.viewCount + " views");
+                })
+            $.getJSON(urlVideo4Views)
+                .done(function (data) {
+                    $(".video4views").text(data.items[0].statistics.viewCount + " views");
+                })
+            $.getJSON(urlVideo5Views)
+                .done(function (data) {
+                    $(".video5views").text(data.items[0].statistics.viewCount + " views");
+                })
+            $.getJSON(urlVideo6Views)
+                .done(function (data) {
+                    $(".video6views").text(data.items[0].statistics.viewCount + " views");
+                })
+            $.getJSON(urlVideo7Views)
+                .done(function (data) {
+                    $(".video7views").text(data.items[0].statistics.viewCount + " views");
+                })
+            $.getJSON(urlVideo8Views)
+                .done(function (data) {
+                    $(".video8views").text(data.items[0].statistics.viewCount + " views");
+                })
+        });
+
+
+    </script>
+
+</html>

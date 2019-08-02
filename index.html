@@ -19,7 +19,7 @@
         </video>
         <div class="content">
             <div class="container w-100 h-100">
-                <nav class='navbar navbar-expand-md sticky-top navbar-dark'>
+                <nav class='navbar navbar-expand-md navbar-dark'>
                     <button class='navbar-toggler' data-toggle="collapse" data-target="#collapse">
                         <span class='navbar-toggler-icon'></span>
                     </button>
@@ -31,10 +31,10 @@
                                     <a class='nav-link btnhome'>HOME</a>
                                 </li>
                                 <li>
-                                    <a class='nav-link btngallery'>GALLERY</a>
+                                    <a class='nav-link btngallery' href = "video.html">VIDEOS</a>
                                 </li>
                                 <li>
-                                    <a class='nav-link btnshop'>SHOP</a>
+                                    <a class='nav-link btnshop' href = "shop.html">SHOP</a>
                                 </li>
                                 <li>
                                     <a class='nav-link btnlogin' href="login.html">LOGIN</a>
@@ -43,8 +43,11 @@
                                     <a class='nav-link btncontact'>CONTACT US</a>
                                 </li>
                                 <li>
+                                    <a class='nav-link btncart' style = "visibility: hidden;">Cart</a>
+                                </li>
+                                <li>
                                     <a class='nav-link btncart'>
-                                        <img class='img-fluid imgcart' src='Image/shopping-cart.png'>
+                                        <img class='img-fluid imgcart' src='Image/shopping-cart.png' style = "margin-top: -10px;">
                                     </a>
                                 </li>
                             </ul>
@@ -58,7 +61,7 @@
                             <img class='img-fluid mx-auto d-block imgdown' src='Image/down-arrow.png'>
                         </a>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </div>
@@ -78,25 +81,38 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class='form-inline ml-auto img-social'>
-                        <img class='img-fluid imgfacebook' src='Image/facebook.png'>
-                        <img class='img-fluid imgyoutube' src='Image/youtube.png'>
-                        <img class='img-fluid imgfacebook' src='Image/instagram.png'>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class='form-inline d-flex txt-social'>
-                        <a href="#" class = "lblhome ml-auto"><label style= "cursor:pointer">Home</label></a>
-                        <a href="#" class = "lblgallery"><label style= "cursor:pointer">Gallery</label></a>
-                        <a href="#" class = "lblshop"><label style= "cursor:pointer">Shop</label></a>
-                        <a href="#" class = "lblcontact"><label style= "cursor:pointer">Contact</label></a>
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-lg-12  d-flex flex-column">
+                <div class="form-inline">
+                    <div class="form-inline mx-auto">
+                        <p class = "pfoot1" style="font-family: Muli; font-size:16px;color:white;margin-right: 15px;cursor:pointer;">
+                            Home
+                        </p>
+                        <p class = "pfoot2" style="font-family: Muli; font-size:16px;color:white;margin-right: 40px;cursor:pointer;">
+                            Gallery</p>
+                        <img src="Image/logo.png" class="img-fluid img-logo-footer"
+                            style="width: 100px;margin-right: 40px;cursor:pointer;">
+                        <p class = "pfoot3" style="font-family: Muli; font-size:16px;color:white;margin-right: 15px;cursor:pointer;">
+                            Shop
+                        </p>
+                        <p class = "pfoot4" style="font-family: Muli; font-size:16px;color:white;margin-right: 15px;cursor:pointer;">
+                            Login</p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row" style="margin-top:35px;margin-bottom:35px;">
+                <div class="col-lg-12 d-flex flex-column">
+                    <div class="form-inline mx-auto">
+                        <img src="Image/facebook.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                        <img src="Image/instagram.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                        <img src="Image/youtube.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                        <img src="Image/twitter.png" class="img-fluid" style="width: 30px; margin-right: 20px;">
+                    </div>
+                </div>
+            </div>
+            <p style="font-family: Muli; font-size:16px;color:white;" class="text-center">2019 @ Kai Sotto. All
+                Rights Reserved</p>
     </div>
 </html>

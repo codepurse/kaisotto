@@ -1,0 +1,314 @@
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1300px !important;
+	}
+}
+@media screen and (max-width:462px) {
+    .imgitem {
+        width: 300px !important;
+    }
+    .row1 {
+        margin-top: 50px !important;
+    }
+}   
+@media screen and (max-width: 375px) {
+    .leftarrow, .rightarrow {
+        display: none !Important;
+    }
+    .imgitem {
+        margin-left:auto !important;
+        margin-right:auto !important;
+        display:block !important;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .pitemname {
+        font-size: 30px !important;
+    }
+    .pprice {
+        font-size: 35px !important;
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .row2 {
+        margin-top: 140px !important;
+    }
+}
+@media screen and (max-width:375px) {
+    .row2 {
+        margin-top: 300px !important;
+    }
+}
+
+
+body ,html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+.pannounce {
+    color: white;
+    font-family: Muli;
+    padding: 0px;
+    margin:0px !important;
+    margin-bottom: 5px !important;
+}
+.btnhome, .btngallery, .btnshop, .btnlogin, .btncontact {
+    font-family: Muli;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    color: #424242 !important;
+    transition: 0.2s;
+    margin-left: 15px;
+}
+.btnhome:hover, .btngallery:hover, .btnshop:hover, .btnlogin:hover, .btncontact:hover {
+    color: #ff1744 !important;
+}
+.psale {
+    color: white;
+    background-color: #ff1744;
+    padding: 3px 10px;
+    width: max-content;
+    margin-bottom: -2px;
+    font-size: 14px;
+}
+.pitemname {
+    font-family: Keep Calm;
+    font-weight: Bold;
+    color: #323232;
+    font-size: 40px;
+
+}
+.pitemtype {
+    font-family: Muli;
+    font-weight: bold;
+    color: #424242;
+    font-size: 15px;
+    margin-top: -20px;
+}
+.pprice {
+    font-family: Keep Calm;
+    margin-top: 20px;
+    color: #ff1744;
+    font-size: 50px;
+}
+.pitemdef {
+    font-family: Muli Semibold;
+    color: #424242;
+    font-size: 15px;
+}
+.pcolor {
+    font-family: Muli;
+    color: #424242;
+    font-size: 15px;
+    font-weight: bold;
+}
+.btncolor1 {
+    border:0px !important;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btncolor2 {
+    border:0px !important;
+    width: 30px;
+    height: 30px;
+    background-color: #ff1744;
+    border-radius: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    outline: none;
+}
+.btncolor3 {
+    border:2px solid #424242;
+    width: 30px;
+    height: 30px;
+    background-color: WHITE;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.btnsize1, .btnsize2, .btnsize3, .btnsize4, .btnsize5 {
+    border: 2px solid #424242;
+    width: 30px;
+    height: 30px;
+    background-color: WHITE;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    font-family: Muli;
+    font-weight: bold;
+    font-size: 12px;
+}
+.btnsize1:hover, .btnsize2:hover, .btnsize3:hover, .btnsize4:hover, .btnsize5:hover {
+    color: #ff1744;
+    border:2px solid #ff1744!important;
+}
+.btnaddcart {
+    border: 2px solid #ff1744;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    width: 140px;
+    margin-top: 20px;
+    height: 45px;
+    font-family: Muli;
+    font-weight: bold;
+    background-color:#ff1744;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.btndetails {
+    border: 2px solid #424242;
+    font-size: 13px;
+    color: #424242;
+    cursor: pointer;
+    width: 140px;
+    margin-top: 20px;
+    height: 45px;
+    font-family: Muli;
+    font-weight: bold;
+    background-color:white;
+    border-radius: 25px;
+}
+.btndetails:hover {
+    color: #ff1744;
+    border-color: #ff1744;
+}
+
+.btnchoosetype {
+    border: 2px solid #424242;
+    color: #424242;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: white;
+    font-family: muli semibold;
+    margin-right: 5px;
+    font-size:13px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 30px;
+    outline: none;
+}
+.btnchoosetype:hover {
+    color: #ff1744;
+    border-color: #ff1744;
+}
+.btnsubscribe {
+    border:0px ;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #ff1744;
+    font-family: muli semibold;
+    margin-right: 5px;
+    font-size:14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.pfootertext {
+    font-family: Muli semibold;
+    font-size: 14px;
+    cursor: pointer;
+    color: #757575 !important;
+    transition: 0.2s;
+    text-decoration: none !important;
+}
+a > .pfootertext:hover {
+    color: #ff1744 !important;
+    text-decoration: none !important;
+}
+a:hover {
+    text-decoration: none !important;
+}
+.hr {
+    width: 100%;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #757575;
+    border: 0 none;
+}
+.hr2 {
+    background-color: #323232;
+    width:5%;
+    border: 0 none;
+    height: 3px;
+    margin: 0px;
+}
+.btnviewmore {
+    border:0px ;
+    color: #323232;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: white;
+    font-family: muli;
+    font-weight: bold;
+    margin-right: 5px;
+    font-size:15px;
+    cursor: pointer;
+    transition: 0.2s;
+    position:absolute;
+    border-radius: 10px;
+    outline: none;
+}
+.centered {
+    position: absolute;
+    transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+    top:52%;
+    left:50%;
+}
+.img-scale {
+    transition: 0.2s;
+}
+.img-scale:hover {
+    transform: scale(1.1);
+	z-index: 9998!important;
+    filter: brightness(50%) !important;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+}
+
+.pseason {
+    font-family: Keep Calm;
+    font-weight: bold;
+    font-size: 37px;
+    color: #323232;
+    line-height: 1.4;
+}
+.btnshopnow {
+    border:0px ;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #ff1744 ;
+    font-family: muli semibold;
+    margin-right: 5px;
+    font-size:15px;
+    cursor: pointer;
+    transition: 0.2s;
+    outline: none;
+    margin-top:20px;    
+}

@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Css/magnify.css">
+    <link href='Css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src='Script\jquery-3.3.1.min.js'></script>
+    <link href='Css/shop.css' rel='stylesheet' type='text/css'>
+    <script src='Script\bootstrap.min.js'></script>
+    <title>Kai Sotto - Shop</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="con-announce"
+        style="background-color: #ff1744;padding:0px !important;margin:0px !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="form">
+                        <label class="pannounce mx-auto"><b>Save</b> when you <b>subscribe</b> today! Get <b>15%</b> off
+                            in selected items only.</label>
+                        <img src="Image/close.png" id="close" class="ml-auto" style="width: 12px;cursor: pointer;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <nav class='navbar navbar-expand-md navbar-dark'>
+                <button class='navbar-toggler' data-toggle="collapse" data-target="#collapse">
+                    <span class='navbar-toggler-icon'></span>
+                </button>
+                <nav class='navbar-brand' href='#'>
+                    <a href="#"><img src="Image/menu.png" id="img-menu" class="img-fluid img-menu"
+                            onmouseover="ChangeMenu()" style="width: 30px;"></a>
+                </nav>
+                <div class='collapse navbar-collapse' id='collapse'>
+                    <div class='col2 mx-auto'>
+                        <ul class='nav navbar-nav'>
+                            <li>
+                                <a class='nav-link btnhome'>Home</a>
+                            </li>
+                            <li>
+                                <a class='nav-link btngallery'>Gallery</a>
+                            </li>
+                            <li>
+                                <a class='nav-link btnshop'
+                                    style="color:#ff1744 !important;text-decoration: underline">Shop</a>
+                            </li>
+                            <li>
+                                <a class='nav-link btnlogin' href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a class='nav-link btncontact'>Contacts</a>
+                            </li>
+                            <li>
+                                <a class='nav-link btncart' style="visibility: hidden;">Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid h-100">
+        <div class="container h-100">
+            <div class="row align-items-center mx-auto h-100 row1">
+                <div class="col-lg-6  text-center">
+                    <div class="form-inline">
+                        <img src="Image/leftarrow.png" class="img-fluid ml-auto leftarrow"
+                            style="width: 35px;cursor: pointer;" onclick="ClickLeft()" data-toggle="tooltip"
+                            title="Front Picture">
+                        <img src="Image/whitesleeve.png" data-magnify-src="Image/whitesleeve.png" id="ImagePic"
+                            class="img-fluid zoom imgitem" style="width: 380px;">
+                        <img src="Image/right.png" class="img-fluid mr-auto rightarrow"
+                            style="width: 35px;cursor: pointer;" onclick="ClickRight()" data-toggle="tooltip"
+                            title="Back Picture">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p class="psale">Sale</p>
+                    <p class="pitemname">Dri-Fit shirt</p>
+                    <p class="pitemtype">Long Sleeve</p>
+                    <p class="pprice">$20.00</p>
+                    <p class="pitemdef">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p class="pcolor">Color</p>
+                    <div class="form_color" style="margin-top: 2px;">
+                        <input type="button" value="" class="btncolor1" onclick="ChangeColorBlack()">
+                        <input type="button" value="" class="btncolor2" onclick="ChangeColorRed()">
+                        <input type="button" value="" class="btncolor3" onclick="ChangeColorWhite()">
+                    </div>
+                    <p class="pcolor">Size</p>
+                    <div class="form_size" style="margin-top: 2px;">
+                        <input type="button" class="btnsize1" value="XS" id="XS" onclick="ButtonSizeXS()">
+                        <input type="button" class="btnsize2" value="S" id="S" onclick="ButtonSizeS()">
+                        <input type="button" class="btnsize3" value="M" id="M" onclick="ButtonSizeM()">
+                        <input type="button" class="btnsize4" value="L" id="L" onclick="ButtonSizeL()">
+                        <input type="button" class="btnsize5" value="XL" id="XL" onclick="ButtonSizeXL()">
+                    </div>
+                    <div class="form_button" style="margin-top: 5px;">
+                        <button value="Add to" class="btnaddcart">ADD TO<img src="Image/cart.png" class="img-fluid"
+                                style="width: 20px;margin-left: 5px;"></button>
+                        <button value="Add to" class="btndetails">DETAILS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row row2">
+                <div class="col-lg-4" style="position:relative;">
+                    <img src="Image/basketball.jpg" class="img-fluid img-scale" width="400px;"
+                        style="border-radius: 10px;filter: brightness(80%);cursor: pointer;">
+                    <div class="centered">
+                        <p style="color: white;font-family: Keep Calm;font-size: 35px;">Sports</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4" style="position:relative;">
+                    <img src="Image/attire.jpg" class="img-fluid img-scale" width="400px;"
+                        style="border-radius: 10px;filter: brightness(80%);cursor: pointer;">
+                    <div class="centered">
+                        <p style="color: white;font-family: Keep Calm;font-size: 35px;">Apparel</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-4" style="position:relative;">
+                    <img src="Image/casual.jpg" class="img-fluid img-scale" width="400px;"
+                        style="border-radius: 10px;filter: brightness(80%);cursor: pointer;">
+                    <div class="centered">
+                        <p style="color: white;font-family: Keep Calm;font-size: 35px;">Casual</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-lg-5">
+                <p style="font-family: Keep Calm;color: #232323;font-size:30px;">Brand New Products</p>
+                <p style="font-family: Muli;font-size:13px;color:#626262;margin-top:-20px;">Browse the huge variety of
+                    our products</p>
+            </div>
+            <div class="col-lg-7">
+                <div class="form-inline float-sm-right">
+                    <input type="button" value="VIEW ALL" class="btnchoosetype">
+                    <input type="button" value="SHIRT" class="btnchoosetype">
+                    <input type="button" value="PANTS" class="btnchoosetype">
+                    <input type="button" value="GEARS" class="btnchoosetype">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="margin-top:40px;">
+            <div class="col-lg-3" style="cursor: pointer;;border: 1px solid #dddcdc;">
+                <div class="form d-flex flex-column">
+                    <div class="form mx-auto text-center" style="padding:0px;margin:0px;width: 100%;    ">
+                        <img src="Image/tsirtblack.png" style="width: 200px;;margin-top:10px;"
+                            class="img-fluid mx-auto">
+                    </div>
+                    <p style="font-family: Muli;font-weight:bold;font-size:13px;color: #323232;margin-top:8px;"
+                        class="text-center">T-SHIRT
+                    </p>
+                    <p style="font-family: sans-serif;font-size:17px;color:#323232;margin-top:-10px;font-weight: bold;"
+                        class="text-center">
+                        Nike Black</p>
+                    <hr class="hr" style="background-color: #232323;margin-top:-5px;width:8%;">
+                    <p style="font-family: lato;font-size:12px;margin-top:-8px;font-weight: bold;color:#ff1744"
+                        class="text-center">
+                        $15.00 USD</p>
+                </div>
+            </div>
+            <div class="col-lg-3" style="cursor: pointer;;border: 1px solid #dddcdc;">
+                <div class="form d-flex flex-column">
+                    <div class="form mx-auto text-center" style="padding:0px;margin:0px;width: 100%;">
+                        <img src="Image/tsirtblack.png" style="width: 200px;;margin-top:10px;"
+                            class="img-fluid mx-auto">
+                    </div>
+                    <p style="font-family: Muli;font-weight:bold;font-size:13px;color: #323232;margin-top:8px;"
+                        class="text-center">T-SHIRT
+                    </p>
+                    <p style="font-family: sans-serif;font-size:17px;color:#323232;margin-top:-10px;font-weight: bold;"
+                        class="text-center">
+                        Nike Black</p>
+                    <hr class="hr" style="background-color: #232323;margin-top:-5px;width:8%;">
+                    <p style="font-family: lato;font-size:12px;margin-top:-8px;font-weight: bold;color:#ff1744"
+                        class="text-center">
+                        $15.00 USD</p>
+                </div>
+            </div>
+            <div class="col-lg-3" style="cursor: pointer;border: 1px solid #dddcdc;">
+                <div class="form d-flex flex-column">
+                    <div class="form mx-auto text-center" style="padding:0px;margin:0px;width: 100%;">
+                        <img src="Image/tsirtblack.png" style="width: 200px;;margin-top:10px;"
+                            class="img-fluid mx-auto">
+                    </div>
+                    <p style="font-family: Muli;font-weight:bold;font-size:13px;color: #323232;margin-top:8px;"
+                        class="text-center">T-SHIRT
+                    </p>
+                    <p style="font-family: sans-serif;font-size:17px;color:#323232;margin-top:-10px;font-weight: bold;"
+                        class="text-center">
+                        Nike Black</p>
+                    <hr class="hr" style="background-color: #232323;margin-top:-5px;width:8%;">
+                    <p style="font-family: lato;font-size:12px;margin-top:-8px;font-weight: bold;color:#ff1744"
+                        class="text-center">
+                        $15.00 USD</p>
+                </div>
+            </div>
+            <div class="col-lg-3" style="cursor: pointer;;border: 1px solid #dddcdc;">
+                <div class="form d-flex flex-column">
+                    <div class="form mx-auto text-center" style="padding:0px;margin:0px;width: 100%;">
+                        <img src="Image/tsirtblack.png" style="width: 200px;margin-top:10px;" class="img-fluid mx-auto">
+                    </div>
+                    <p style="font-family: Muli;font-weight:bold;font-size:13px;color: #323232;margin-top:8px;"
+                        class="text-center">T-SHIRT
+                    </p>
+                    <p style="font-family: sans-serif;font-size:17px;color:#323232;margin-top:-10px;font-weight: bold;"
+                        class="text-center">
+                        Nike Black</p>
+                    <hr class="hr" style="background-color: #232323;margin-top:-5px;width:8%;">
+                    <p style="font-family: lato;font-size:12px;margin-top:-5px;font-weight: bold;color:#ff1744"
+                        class="text-center">
+                        $15.00 USD</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="margin-top:50px;">
+                <div class="col-lg-6">
+                    <p class="pseason">This <br> Season's <br>Must-Haves</p>
+                    <hr class="hr2">
+                    <input type="button" class="btnshopnow" value="Shop now">
+                </div>
+                <div class="col-lg-6">
+                    <p class="pseason">New <br> Arrivals <br>Apparels</p>
+                    <hr class="hr2">
+                    <input type="button" class="btnshopnow" value="Shop now">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid" style="margin-top:50px;">
+        <div class="container" style="background-color: #0f111e">
+            <div class="row" style="padding-top:40px;padding-bottom: 35px;">
+                <div class="col-lg-3 d-flex flex-column">
+                    <img src="Image/news.png" style="width: 50px;" class="img-fluid ml-auto">
+                </div>
+                <div class="col-lg-3">
+                    <p style="font-family: Keep Calm;font-size:25px;color: white;">Newsletter</p>
+                    <p style="color:white;font-family: muli semibold;margin-top:-15px;font-size:12px;">subscribe here
+                        for get every single updates</p>
+                </div>
+                <div class="6">
+                    <input type="text"
+                        style="font-family:muli semibold;color:#eeeeee;padding:10px 20px 10px 20px;width: 300px;background-color: #141625;font-size:14px;border-color:#141625"
+                        placeholder="Enter your email address here...">
+                    <input type="button" class="btnsubscribe" value="SUBSCRIBE NOW">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="margin-top:50px;">
+                <div class="col-lg-4">
+                    <img src="Image/footerlogo.png" class="img-fluid" style="width:40px;">
+                    <p style="font-family: muli semibold;font-size:13px;color: #757575;margin-top: 10px;">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="col-lg-2">
+                    <p style="font-family: sans-serif;font-size:17px;color:#0f111e;font-weight: bold;">Social Media
+                    </p>
+                    <a href="#">
+                        <p style="margin:7px 0;" class="pfootertext">Facebook</p>
+                    </a>
+                    <a href="#">
+                        <p style="margin:7px 0;" class="pfootertext">Twitter</p>
+                    </a>
+                    <a href="#">
+                        <p style="margin:7px 0;" class="pfootertext">Youtube</p>
+                    </a>
+                    <a href="#">
+                        <p style="margin:7px 0;" class="pfootertext">Instagram</p>
+                    </a>
+                </div>
+                <div class="col-lg-2">
+                    <p style="font-family: sans-serif;font-size:17px;color:#0f111e;font-weight: bold;">About
+                    </p>
+                    <a href="#">
+                        <p style="margin:7px 0;" class="pfootertext">FAQ</p>
+                    </a>
+                    <a href="#">
+                        <p style="margin:7px 0;" class="pfootertext">Terms & Conditions</p>
+                    </a>
+                    <a href="#">
+                        <p style="margin:7px 0;" class="pfootertext">Privacy Policy</p>
+                    </a>
+                    <a href="#">
+                        <p style="margin:7px 0;" class="pfootertext">Wholesale</p>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-inline">
+                        <img src="Image/phone.png" class="img-fluid" style="width: 40px;">
+                        <p class="pfootertext" style="margin-left: 5px;padding-top:10px;">Got Question? Call or Text
+                            us!<br>
+                            <span style="font-family: Lato;color:#424242;font-size: 18px;font-weight: bold;">(046)
+                                854 8745</span></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="container" style="margin-bottom: 20px;">
+            <div class="row">
+                <div class="col-lg-12 form-inline text-right">
+                    <label class="pfootertext">Copyright and Design by: <span style="color:#ff1744;">Guerilla360</span>
+                        - 2019</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Script/jquery.magnify.js"></script>
+    <script language="javascript">
+        $(document).ready(function () {
+            $('.zoom').magnify();
+        });
+
+        $("#close").click(function () {
+            $("#con-announce").addClass('d-none');
+        });
+
+        $(".img-menu").hover(function () {
+            $(".img-menu").attr("src", "Image/menu1.png");
+        }, function () {
+            $(".img-menu").attr("src", "Image/menu.png");
+        });
+
+
+        function ChangeColorRed() {
+            if (document.getElementById("ImagePic").src != "../Image/pinksleeve.png") {
+                document.getElementById("ImagePic").src = "Image/pinksleeve.png";
+            }
+        }
+        function ChangeColorBlack() {
+            if (document.getElementById("ImagePic").src != "../Image/blacksleeve.png") {
+                document.getElementById("ImagePic").src = "Image/blacksleeve.png";
+            }
+        }
+        function ChangeColorWhite() {
+            if (document.getElementById("ImagePic").src != "../Image/whitesleeve.png") {
+                document.getElementById("ImagePic").src = "Image/whitesleeve.png";
+            }
+        }
+
+        function ButtonSizeXS() {
+            if (document.getElementById("XS").style.backgroundColor = "white") {
+                document.getElementById("XS").style.backgroundColor = "#ff1744";
+                document.getElementById("XS").style.color = "#ffffff";
+                document.getElementById("XS").style.borderColor = "#ff1744";
+                document.getElementById("S").style.backgroundColor = "#ffffff";
+                document.getElementById("S").style.color = "#424242";
+                document.getElementById("S").style.borderColor = "#424242";
+                document.getElementById("M").style.backgroundColor = "#ffffff";
+                document.getElementById("M").style.color = "#424242";
+                document.getElementById("M").style.borderColor = "#424242";
+            }
+        }
+
+        function ButtonSizeS() {
+            if (document.getElementById("S").style.backgroundColor = "white") {
+                document.getElementById("S").style.backgroundColor = "#ff1744";
+                document.getElementById("S").style.color = "#ffffff";
+                document.getElementById("S").style.borderColor = "#ff1744";
+                document.getElementById("XS").style.backgroundColor = "#ffffff";
+                document.getElementById("XS").style.color = "#424242";
+                document.getElementById("XS").style.borderColor = "#424242";
+                document.getElementById("M").style.backgroundColor = "#ffffff";
+                document.getElementById("M").style.color = "#424242";
+                document.getElementById("M").style.borderColor = "#424242";
+            }
+        }
+
+        function ButtonSizeM() {
+            if (document.getElementById("M").style.backgroundColor = "white") {
+                document.getElementById("M").style.backgroundColor = "#ff1744";
+                document.getElementById("M").style.color = "#ffffff";
+                document.getElementById("M").style.borderColor = "#ff1744";
+                document.getElementById("XS").style.backgroundColor = "#ffffff";
+                document.getElementById("XS").style.color = "#424242";
+                document.getElementById("XS").style.borderColor = "#424242";
+                document.getElementById("S").style.backgroundColor = "#ffffff";
+                document.getElementById("S").style.color = "#424242";
+                document.getElementById("S").style.borderColor = "#424242";
+            }
+        }
+    </script>
+</body>
+
+</html>
