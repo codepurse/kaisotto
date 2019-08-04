@@ -1,0 +1,23 @@
+
+@media screen and (min-width: 1200px) {
+	.container {
+		max-width: 1300px !important;
+	}
+}
+
+body {
+	background-color: #212121;
+}
+
+.masonry-item:hover {
+	filter: brightness(50%);
+}
+.imgcart {
+    width: 20px;
+}
+.pgallery {
+	font-size:50px;
+	font-family: hind;
+	font-weight: 500;
+	color: #eeeeee;
+}

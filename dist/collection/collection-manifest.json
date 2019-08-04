@@ -1,0 +1,83 @@
+{
+  "components": [
+    {
+      "tag": "img-gallery",
+      "dependencies": [
+        "img-gallery-image"
+      ],
+      "componentClass": "ImgGallery",
+      "componentPath": "components/img-gallery/img-gallery.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/img-gallery/img-gallery.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "color",
+          "type": "String",
+          "attr": "color"
+        },
+        {
+          "name": "src",
+          "attr": "src"
+        }
+      ],
+      "states": [
+        {
+          "name": "CurrentImageUrl"
+        },
+        {
+          "name": "images"
+        },
+        {
+          "name": "preview"
+        }
+      ],
+      "shadow": true
+    },
+    {
+      "tag": "img-gallery-image",
+      "dependencies": [],
+      "componentClass": "ImgGalleryImage",
+      "componentPath": "components/img-gallery-image/img-gallery-image.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/img-gallery-image/img-gallery-image.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "alt",
+          "type": "String",
+          "attr": "alt"
+        },
+        {
+          "name": "src",
+          "type": "String",
+          "attr": "src"
+        }
+      ],
+      "states": [
+        {
+          "name": "oldSrc"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.11.0",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}
