@@ -12,9 +12,20 @@
     <link href="Css/photo.css" rel='stylesheet' type='text/css'>
     <link href="Css/lightbox.css" rel='stylesheet' type='text/css'>
     <script src='Script/lightbox.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <title>Document</title>
 </head>
+<style>
+    img:not([src]) {
+        visibility: hidden;
+    }
+
+    /* Fixes Firefox anomaly during image load */
+    @-moz-document url-prefix() {
+        img:-moz-loading {
+            visibility: hidden;
+        }
+    }
+</style>
 
 <body>
     <div class="container">
@@ -29,7 +40,7 @@
                 <div class='col2 ml-auto'>
                     <ul class='nav navbar-nav'>
                         <li>
-                            <a class='nav-link btnhome'>HOME</a>
+                            <a class='nav-link btnhome' href = "index.html">HOME</a>
                         </li>
                         <li>
                             <a class='nav-link btngallery' href="video.html">VIDEOS</a>
@@ -58,6 +69,7 @@
         <div class="row">
             <div class="col-lg-12 text-center" style="margin-top:50px;">
                 <p class="pgallery">Gallery</p>
+                <p class="pgallerysub">Feel free to check out Kai latest photo</p>
             </div>
         </div>
         <div class="row">
@@ -76,7 +88,7 @@
                     <a href="Image/Pictures/img6.jpg" data-lightbox="roadtrip" data-title="My caption"><img
                             data-src="Image/Pictures/img6.jpg" class="img-fluid masonry-item"></a>
                     <a href="Image/Pictures/img22.jpg" data-lightbox="roadtrip" data-title="My caption"><img
-                            data-src="Image/Pictures/img7.jpg" class="img-fluid masonry-item"></a>
+                            data-src="Image/Pictures/img22.jpg" class="img-fluid masonry-item"></a>
                     <a href="Image/Pictures/img8.jpg" data-lightbox="roadtrip" data-title="My caption"><img
                             data-src="Image/Pictures/img8.jpg" class="img-fluid masonry-item"></a>
                     <a href="Image/Pictures/img9.jpg" data-lightbox="roadtrip" data-title="My caption"><img
@@ -166,20 +178,54 @@
         <p style="font-family: Muli; font-size:16px;color:white;" class="text-center">2019 @ Kai Sotto. All
             Rights Reserved</p>
     </div>
-
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
 <script>
-    const myLazyLoad = new LazyLoad({
-        elements_selector: ".masonry-item"
-    });
+    (function () {
+        function logElementEvent(eventName, element) {
+            console.log(
+                Date.now(),
+                eventName,
+                element.getAttribute("data-src")
+            );
+        }
+
+        var callback_enter = function (element) {
+            logElementEvent("🔑 ENTERED", element);
+        };
+        var callback_exit = function (element) {
+            logElementEvent("🚪 EXITED", element);
+        };
+        var callback_reveal = function (element) {
+            logElementEvent("👁️ REVEALED", element);
+        };
+        var callback_loaded = function (element) {
+            logElementEvent("👍 LOADED", element);
+        };
+        var callback_error = function (element) {
+            logElementEvent("💀 ERROR", element);
+            element.src =
+                "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+        };
+        var callback_finish = function () {
+            logElementEvent("✔️ FINISHED", document.documentElement);
+        };
+
+        var ll = new LazyLoad({
+            elements_selector: ".masonry-item",
+            callback_enter: callback_enter,
+            callback_exit: callback_exit,
+            callback_reveal: callback_reveal,
+            callback_loaded: callback_loaded,
+            callback_error: callback_error,
+            callback_finish: callback_finish
+        });
+    })();
 
     lightbox.option({
         'resizeDuration': 300,
         'wrapAround': true
     })
-
-
 </script>
 
 </html>
