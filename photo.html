@@ -12,6 +12,7 @@
     <link href="Css/photo.css" rel='stylesheet' type='text/css'>
     <link href="Css/lightbox.css" rel='stylesheet' type='text/css'>
     <script src='Script/lightbox.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
     <title>Document</title>
 </head>
 
@@ -163,16 +164,18 @@
     </div>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+
 <script>
+    const myLazyLoad = new LazyLoad({
+        elements_selector: ".masonry-item"
+    });
+    
     lightbox.option({
         'resizeDuration': 300,
         'wrapAround': true
     })
 
-    var myLazyLoad = new LazyLoad({
-        elements_selector: ".masonry-item"
-    });
+    
 </script>
 
 </html>
